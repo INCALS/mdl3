@@ -8,31 +8,44 @@
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
 <div id="navbar" class="navbar-fixed scrollspy">
   <nav  class="white">
     <div class="nav-wrapper container">
-    	<div class="container"> <a href="#navbar" class="brand-logo">Logo</a></div>
-     
+    	 <a href="#navbar" class="brand-logo">Logo</a>
+
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       <ul class="right hide-on-med-and-down">
-       
+
         <li><a class="head-link" href="#projects">Projects</a></li>
          <li><a class="head-link" href="#aboutus">About Us</a></li>
         <li><a class="head-link" href="#contactus">Contact Us</a></li>
-       
+
       </ul>
       <ul class="right side-nav" id="mobile-demo">
       	<li><a class="head-link" href="#projects">Projects</a></li>
          <li><a class="head-link" href="#aboutus">About Us</a></li>
-        
+
         <li><a class="head-link" href="#contactus">Contact Us</a></li>
       </ul>
     </div>
   </nav>
   </div>
 
+  <!-- message -->
+
+  <a href="#msg" class="btn-floating btn-large waves-effect waves-light purple lighten-1 modal-trigger" style=" position: fixed;right:15px;bottom: 0;" alt="Message Us"><i class="material-icons">chat</i></a>
+
+  <div id="msg" class="modal" style="margin-right:35px;bottom:-120px;width:200px; height:350px">
+    <div class="modal-content">
+      <h5>New Message</h5>
+    </div>
+  </div>
+
+  <!-- message -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -42,7 +55,11 @@
           <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
         </div>
         <div class="row center">
-          <a href="#" class="btn-large waves-effect waves-light purple lighten-1">Find more</a>
+
+
+
+            <!-- Modal Structure -->
+          <a href="#modal1" class="btn-large waves-effect waves-light purple lighten-1 modal-trigger">Join Now</a>
         </div>
         <br><br>
 
@@ -52,12 +69,108 @@
   </div>
 
 
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+
+      <ul id="tabs-swipe-demo" class="tabs">
+     <li class="tab col s3"><a href="#login">Login</a></li>
+     <li class="tab col s3"><a class="active" href="#signup">Signup</a></li>
+
+   </ul>
+   <!--login start -->
+   <div id="login" class="col s12 ">
+
+
+       <div class="row">
+         <div class="input-field col s6">
+           <input id="email" type="email" class="validate">
+           <label for="email">Email</label>
+         </div>
+
+         <div class="input-field col s6">
+           <input id="password" type="password" class="validate">
+           <label for="password">Choose Password</label>
+         </div>
+       </div>
+
+      <div class="row center">
+      <div class="input-field col s12">
+
+        <a href="#" class="btn-large waves-effect waves-light purple lighten-1 modal-trigger" >Login Now</a>
+      </div>
+      </div>
+
+
+     </form>
+   </div>
+
+   </div>
+   <!--login edn -->
+
+   <!--signup start -->
+   <div id="signup" class="col s12">
+
+     <div class="row">
+     <form class="col s12">
+       <div class="row">
+         <div class="input-field col s6">
+           <input id="first_name" type="text" class="validate">
+           <label for="first_name">First Name</label>
+         </div>
+         <div class="input-field col s6">
+           <input id="last_name" type="text" class="validate">
+           <label for="last_name">Last Name</label>
+         </div>
+       </div>
+       <div class="row">
+         <div class="input-field col s6">
+           <input id="email" type="email" class="validate">
+           <label for="email">Email</label>
+         </div>
+
+         <div class="input-field col s6">
+           <input id="password" type="password" class="validate">
+           <label for="password">Choose Password</label>
+         </div>
+       </div>
+
+       <div class="input-field col s6">
+        <select>
+          <option value="" disabled selected>Choose blood group type</option>
+          <option value="1">A+</option>
+          <option value="2">B+</option>
+          <option value="3">O+</option>
+          <option value="1">AB+</option>
+          <option value="2">A-</option>
+          <option value="3">B-</option>
+          <option value="1">AB-</option>
+          <option value="3">O-</option>
+        </select>
+      </div>
+      <div class="input-field col s6">
+
+        <a href="#" class="btn-large waves-effect waves-light purple lighten-1 modal-trigger">Sign Up Now</a>
+      </div>
+
+
+     </form>
+   </div>
+
+   </div>
+   <!--sign up end -->
+
+
+    </div>
+
+  </div>
+
+
   <div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+          <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center" style="color:#333"><i class="mdi-av-new-releases"></i></h2>
             <h5 class="center">Feature one</h5>
@@ -88,61 +201,21 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12" style="color: #333;">Vertically centered text</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="1412019519aax7e.jpg" alt="img"></div>
-  </div>
 
-  <div class="container section scrollspy" id="projects">
-    <div class="section">
-    	<br>
-    	<br>
-      <h4 class="center">Our Work</h4>
-      <br>
-      <div class="row">
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project"  src="blur-flowers-nature-471-827x550.jpg">
-      	</div> 
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project"  src="1415117217bc45x.jpg">
-      	</div> 
-      </div><!--row-->
-      
-       <div class="row">
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project" src="1397154567yttyy.jpg">
-      	</div> 
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project" src="1399827845b0i1k.jpg">
-      	</div> 
-      </div><!--row-->
-      
-      <div class="center">
-      	<a class="waves-effect waves-light btn purple lighten-1">View more</a>
-      </div>
-
-    </div>
-  </div>
 
 
    <div class="parallax-container valign-wrapper section scrollspy" id="aboutus">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="center row col s3">
-        	
+
         	<h3>About Us</h3>
        </div>
         <div class="center row col s12">
         	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
         		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
        </div>
-       
+
       </div>
     </div>
     <div class="parallax"><img src="1423255813yuwjj.jpg" alt="img"></div>
@@ -150,49 +223,50 @@
 
 
 
+
 <div class="container section scrollspy" id="contactus">
 	<div class="section">
 		<br>
 	<br>
-	<h2>Contact Us</h2>	
-	
+	<h4>Contact Us</h4>
+
 <div class="row">
-		
+
   <form class="col s8">
-  
+
     <div class="row">
       <div class="input-field col s6">
         <input id="name" type="text" class="validate">
         <label for="name">Your Name</label>
       </div>
-   
-    
+
+
       <div class="input-field col s6">
         <input id="email" type="email" class="validate">
         <label for="email">Your Email</label>
       </div>
     </div><!--row-->
-    
+
      <div class="row">
       <div class="input-field col s12">
         <input id="message-sub" type="email" class="validate">
         <label for="message-sub">Message Subject</label>
       </div>
     </div>
-    
+
      <div class="row">
       <div class="input-field col s12">
          <textarea id="text_area" class="materialize-textarea"></textarea>
         <label for="text_area">Your Message</label>
       </div>
     </div>
-    
-     
+
+
       <div>
       	<a class="waves-effect waves-light btn purple lighten-1">Send Message<i class="mdi-content-send right"></i></a>
       </div>
      </form>
-     
+
       <div class="col s12 m4">
                     <p>
                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
@@ -203,15 +277,15 @@
 	<li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img src="images/flat_web_icon_set/inverted/GooglePlus.png"></a></li>
 </ul>
                 </div>
-     
-     
+
+
 </div>
 	</div>
 </div>
 
 
   <footer class="page-footer purple lighten-1">
-   
+
     <div class="footer-copyright">
       <div class="container">
        <p>Copyright © Your website name</p>
@@ -230,10 +304,24 @@
       $('.button-collapse').sideNav();
   });
   </script>
+
+  <script>
+  $(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+  $('select').material_select();
+  $('.tabs').tabs();
+  });
+
+
+
+  </script>
+
+
   <script>
   	    $('.head-link').click(function(e) {
         e.preventDefault();
-        
+
         var goto = $(this).attr('href');
 
         $('html, body').animate({
